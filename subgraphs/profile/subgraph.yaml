@@ -1,6 +1,6 @@
 specVersion: 0.0.2
-description: Pancake Profile
-repository: https://github.com/pancakeswap
+description: BigSwap Profile
+repository: https://github.com/BigSwap-Finance
 schema:
   file: ./schema.graphql
 dataSources:
