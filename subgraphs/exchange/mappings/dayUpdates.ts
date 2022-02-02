@@ -4,7 +4,7 @@ import { BigInt, BigDecimal, ethereum } from "@graphprotocol/graph-ts";
 import { Pair, Bundle, Token, BigSwapFactory, BigSwapDayData, PairDayData, TokenDayData } from "../generated/schema";
 import { ONE_BI, ZERO_BD, ZERO_BI, FACTORY_ADDRESS } from "./utils";
 
-export function updatePancakeDayData(event: ethereum.Event): PancakeDayData {
+export function updateBigSwapDayData(event: ethereum.Event): BigSwapDayData {
   let bigswap = BigSwapFactory.load(FACTORY_ADDRESS);
   let timestamp = event.block.timestamp.toI32();
   let dayID = timestamp / 86400;
