@@ -319,7 +319,7 @@ export function handleBurn(event: Burn): void {
   token0.save();
   token1.save();
   pair.save();
-  pancake.save();
+  BigSwap.save();
 
   // update burn
   // burn.sender = event.params.sender
